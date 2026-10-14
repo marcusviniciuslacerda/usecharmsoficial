@@ -1,0 +1,207 @@
+/* PALETA INSPIRADA NO INSTAGRAM DA CHARMS (DARK & NEON) */
+:root {
+    --cor-fundo: #0b0c10;       
+    --cor-card: #1f2833;        
+    --cor-texto-p: #ffffff;     
+    --cor-texto-s: #c5c6c7;     
+    --cor-neon-linha: linear-gradient(45deg, #ff007f, #7a22ff, #ffaa00); 
+    --fonte: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+    -webkit-tap-highlight-color: transparent; 
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto-p);
+    padding-bottom: 30px;
+}
+
+.barra-topo {
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: 1px solid #1f2833;
+}
+
+header {
+    background-color: #000000;
+    text-align: center;
+    padding: 30px 15px;
+    border-bottom: 1px solid #1f2833;
+}
+
+header {
+    background-color: #000000;
+    text-align: center;
+    padding: 30px 15px;
+    border-bottom: 1px solid #1f2833;
+}
+
+/* Configuração perfeita para a sua nova imagem de logo */
+.logo-img-header {
+    width: 80px;          /* Altura e largura iguais garantem o círculo perfeito */
+    height: 80px;
+    border-radius: 50%;   /* Deixa a imagem redonda como no Instagram */
+    object-fit: cover;    /* Impede que a logo fique esticada ou amassada */
+    margin: 0 auto 12px auto;
+    display: block;
+}
+
+
+.status-loja {
+    font-size: 10px;
+    color: #66ff66;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-loja::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #66ff66;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #66ff66;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 12px;
+}
+
+.titulo-secao {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--cor-texto-s);
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+@media (max-width: 350px) {
+    .grid-produtos {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-produto {
+    background-color: var(--cor-card);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #2a3b4c;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+}
+
+.card-produto:active {
+    transform: scale(0.97);
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+    padding-top: 133.33%; 
+    background-color: #0b0c10;
+}
+
+.img-produto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tag-novidade {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    font-size: 8px;
+    padding: 4px 6px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    font-weight: 600;
+    border: 1px solid #7a22ff;
+    z-index: 10;
+}
+
+.info-produto {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.nome-produto {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 4px;
+    color: var(--cor-texto-p);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 32px;
+    line-height: 1.3;
+}
+
+.preco-produto {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.btn-comprar {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 15px;
+    font-size: 10px;
+    color: var(--cor-texto-s);
+    border-top: 1px solid #1f2833;
+}
